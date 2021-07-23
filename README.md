@@ -1,2 +1,3 @@
-# miniSitesJS
-This repo will store all the mini JavaScript's site projects I am going to create
+# LoanApp
+A program that displays the amount of money a person will end up paying over a period of time
+With a specific interest rate.

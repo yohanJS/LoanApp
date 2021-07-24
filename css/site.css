@@ -31,6 +31,10 @@ main>.container {
 .bs-color {
     color: #8612fb;
 }
+.bold {
+    font-weight: bold;
+    color: var(--primary-color);
+}
 .html-color {
     color: #e54c21;
 }

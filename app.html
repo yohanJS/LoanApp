@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>App Name: A Coding Project by Yohan Garcia</title>
+    <title>Loan App: A Coding Project by Yohan Garcia</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -33,13 +33,13 @@
                         <a class="nav-link" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./app.html">The App</a>
+                        <a class="nav-link active" aria-current="page" href="./app.html">Loan App</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./code.html">The Code</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" target="_blank" href="https://github.com/yohanJS/miniSitesJS">Git Repo</a>
+                        <a class="nav-link" target="_blank" href="https://github.com/yohanJS/LoanApp">Git Repo</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" target="_blank" href="https://www.yohancraft.com/">About</a>
@@ -51,7 +51,69 @@
 
     <!--Main Section-->
     <main class="flex-shrink-0">
-
+        <div class="container mt-3 mb-3">
+            <div class="row row-cols-1 row-cols-sm-2 gy-1">
+                <!--DESCRIPTION-->
+                <div class="col">
+                    <h2 class="txt-color border-bottom">The Loan App: A Coding Project</h2>
+                    <h4 class="lead">
+                        Would you like to know how much interest you will pay 
+                        on a loan based on the rate and the amount of time? Then, 
+                        check the Loan App, and do not waste money!
+                    </h4>
+                    <h2 class="txt-color border-bottom">Instructions</h2>
+                    <p class="lead">
+                        Input the values require as follows, and then click the 
+                        calculate button! Yes! Is that simple!
+                    </p>
+                </div>
+                <!--FORM FOR VALUES-->
+                <div class="col">
+                    <h3 class="txt-color">Enter the values:</h3>
+                    <p class="lead">Only numbers</p>
+                    <form id="my-form" class="row row-cols-1 row-cols-sm-3 gy-1">
+                        <div class="col">
+                            <input class="form-control" type="number" placeholder="loan amount" id="loan-amount">
+                        </div>
+                        <div class="col">
+                            <input class="form-control" type="number" placeholder="term (months)" id="term">
+                        </div>
+                        <div class="col">
+                            <input class="form-control" type="number" placeholder="Interest rate" id="rate">
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-outline-primary" type="button" id="calculate">Calculate</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col">
+                            <p class="lead" id="desc"></p>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="lead" id="total-interest"></p>
+                                    <p class="lead" id="total-cost"></p>
+                                </div>
+                                <div class="col">
+                                    <p class="lead" id="monthly-title"></p>
+                                    <p class="bold fs-3" id="monthly-payment"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <tbody id="tBody">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!--Footer Section-->

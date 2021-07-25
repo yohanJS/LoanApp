@@ -31,7 +31,7 @@ main>.container {
 .bs-color {
     color: #8612fb;
 }
-.bold {
+.my-bold {
     font-weight: bold;
     color: var(--primary-color);
 }

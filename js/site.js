@@ -86,18 +86,22 @@ const getValues =()=> {
 
     }
     //display monthly payments
-    $("monthly-title").innerHTML = `Your Monthly Payments`;
+    $("monthly-title").innerHTML = `<strong>Your Monthly Payments</strong>`;
     $("monthly-payment").innerHTML = `$${monthlyPayment.toFixed(2)}`;
-    $("total-interest").innerHTML = `Total Interest $${totalInterest.toFixed(2)}`;
-    $('total-cost').innerHTML = `Total cost $${(totalInterest + loanInfo.amount).toFixed(2)}`;
+    $("total-interest").innerHTML = `<strong>Total Interest:</strong> $${totalInterest.toFixed(2)}`;
+    $('total-cost').innerHTML = `<strong>Total cost:</strong> $${(totalInterest + loanInfo.amount).toFixed(2)}`;
 
 }
 
 window.onload =()=> {
     $("calculate").onclick =()=> {
-        $("tBody").innerHTML = "";
-        getValues();
-        $("my-form").reset();
+        if($("loan-amount").value && $("term").value && $("rate").value && $("rate").value != 0){
+            $("tBody").innerHTML = "";
+            getValues();
+            $("my-form").reset();
+        } else {
+            alert("Please enter valid numbers!\n rate must be greater than 0.")
+        }
     }
 }
 

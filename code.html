@@ -197,7 +197,57 @@ window.onload =()=> {
                 </div>
                 <div class="col col-lg-4">
                     <h5 class="txt-color">Code Desc.</h5>
-                    <p class="lead">The Loan App is structured.</p>
+                    <p class="lead">The Loan App is structured as folllow.</p>
+                    <p>
+                        Using the arrow function syntax, we have declared a function 
+                        that takes a single parameter—the ID of an element inside the 
+                        HTML DOC. Then it returns its value.
+                    </p>
+                    <p>
+                        Following this, we have declared an empty object. This object will 
+                        later hold the information of the loan application.
+                    </p>
+                    <p>
+                        Now, using the arrow function syntax, we have declared another 
+                        function that gets the values the user enters. This function does a 
+                        few tasks. Let's break them down one by one.
+                    </p>
+                    <p>
+                        First, we retrieved the values and even though we have used a type of 
+                        number in the HTML form. Then, we have implemented an extra layer of 
+                        authentication using the parseFloat method to convert a type string to a number.
+                    </p>
+                    <p>
+                        After, we have inserted the properties into the loanInfo object declared above.
+                    </p>
+                    <p>
+                        Now, we have used a pre-made formula to find the monthly payments the user has to make. 
+                    </p>
+                    <p>
+                        We then declared two variables one for the total amount of interest the user has paid so far 
+                        and the second for the remaining balance the user has.
+                    </p>
+                    <p>
+                        The subsequent three statements are displaying the values entered by the user. We have accessed the 
+                        loanInfo object in this case to show each property.
+                    </p>
+                    <p>
+                        The next for loop iterates over the loanInfo object property of terms. In this case, it is the time 
+                        frame the customer has to pay the loan back. We inserted a new row on every iteration, and inside that 
+                        row, we added the table data of 'month,' 'payment,' 'principal,' 'interest,' 'total interest,' and 'balance.'
+                    </p>
+                    <p>
+                        We find every value using basic math, and we have inserted those values in their respective cell.
+                    </p>
+                    <p>
+                        At the end of the function, we display the monthly payment, the total interest, and the total cost of the loan.
+                    </p>
+                    <p>
+                        Finally, the window object and the onload method are implemented to load the script after the DOM has loaded completely. 
+                        In addition, we have added an event listener of the onlclick event for the calculate button. They are using a call-back 
+                        function to call the getValues function. The form will be reset on every event, and the table body will be deleted. A 
+                        simple if/else statement ensures that the customer enters valid values; otherwise, we alert a message. 
+                    </p>
                 </div>
             </div>
         </div>
